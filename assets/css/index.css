@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("fonts/Century Gothic.ttf") format("truetype"), url("fonts/CenturyGothic.ttf") format("truetype"), url("fonts/GOTHIC.ttf") format("truetype"), url("fonts/GOTHICB.ttf") format("truetype"), url("fonts/GOTHICB0.ttf") format("truetype"), url("fonts/GOTHICBI.ttf") format("truetype"), url("fonts/GOTHICI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Harmonia Sans W01";
+  src: url("fonts/Harmonia Sans W01 Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "CenturyGothic", sans-serif;
+}/*# sourceMappingURL=index.css.map */
