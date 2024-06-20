@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" width="20" height="14">
+	<title>download (2)</title>
+	<defs>
+		<image width="20" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAAAXNSR0IArs4c6QAAAXlJREFUOE/NlE1LAkEYx//jKr7jImrrImF1iQ6lh0K8dYguQQQdgiKwgx08dBD6AH0HIxChS0Qv6LeIIsiOUdTF0EVZk3JdXXUn2Lq6zqFDc5uZPz9+zzM8Q0qHhaOXmpKmIBaMWBuCKs+4Bt1R98Y5pcOhEMqRbLakN1p9Ioa9eHpuID4fxu39OxKLEdzcVZBYimCZSEhGOFOewXQ522Rv/5qGgm5YCMBZLej2BnDYreh2B7DaLBj0daxZq0gKY3lGgOykLmh0kofS0eDzOdBsduD3OyHLHfh8TrRaKjYDn0yGBnBr95xOR3m02xp43ol6Q0Eo6EJNUjARchv7bb/MbphKX9Gw4AEIga5T2Lifsu12zijbZuOwam+wG6YzRaqqfYiiF69vH5ibDaD8KCEeC+OhXEVsQcDKsMJueHJQoJqmm3Z8fQoQ3YyPop2eUbYoW4r0c/m/Bf5/w95l8Yt0VA9bh8xTxuhpx/kUJ9UzIGT8sJrxfj+Hb/j4kaOKKLPnAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="download (2)" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

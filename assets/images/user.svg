@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 22" width="18" height="22">
+	<title>user</title>
+	<defs>
+		<image  width="18" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAWCAMAAAD6gTxzAAAAAXNSR0IB2cksfwAAAGxQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NhtAPQAAACR0Uk5TAAVrz/oLwP/todY7JuwXioBkgqC/GzA/0ELbsrABdS3NQEpQynrOIQAAAKhJREFUeJydztsKgkAQBuAdxai0g4iYlFTv/1JBkIlsYlhGyzqNu2onu+m/cPHbYfYHVgcoDCnqp/5YBESEoqVRZcKF2SiNsiFHDOBM5xTvVqHJsIa5Wjm7iUrTvBxnityrffo51bPr+aLDP3tN8q5XT/v3KPLbC0w1BZB1Ey4mRGFqeqDHELn0Y4gkD3DfDEWQeCasj+HuZfcmXsD2oPq18YrlN63+pgfTC1IBadyEIgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="user" href="#img1" x="0" y="0"/>
+</svg>
