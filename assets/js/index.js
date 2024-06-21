@@ -3,7 +3,7 @@ $(document).ready(function () {
     function initCountDown() {
         var end = new Date('2024-06-30T09:09:59');
         var timer = countdown(
-            function(ts) {
+            function (ts) {
                 // Tạo chuỗi định dạng theo days-hours-minutes-seconds
                 var formattedTime = `
                 <div class="countdown-item">
@@ -33,10 +33,6 @@ $(document).ready(function () {
             end,
             countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS
         );
-    }
-    initCarousel();
-    function initCarousel(){
-        var $carousel = $('.carousel').flickity();
     }
     handleDropdown();
     function handleDropdown() {

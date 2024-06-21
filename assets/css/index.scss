@@ -50,6 +50,53 @@ body {
   line-height: 14px;
   width: fit-content;
 }
+.product_badges {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  left: 10px;
+
+  .badge {
+    display: none;
+    padding: 0.2rem 0.9rem;
+    line-height: 1.8;
+    background-color: #ccc;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: center;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    width: fit-content;
+    user-select: none;
+
+    &.active {
+      display: block;
+    }
+
+    &.new {
+      background-color: #fefa98;
+      color: #000;
+    }
+
+    &.sale {
+      background-color: #cb3a3e;
+    }
+
+    &.sale-off {
+      background-color: #ef837b;
+    }
+
+    &.out-of-stock {
+      background-color: #ffffff;
+    }
+  }
+}
 .header-wrapper {
   width: 100%;
   padding: 0;
@@ -366,33 +413,130 @@ body {
         padding-top: 87.29%;
       }
     }
-    .banner-slider{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        width: 100%;
-        height: 80%;
-        top: 50%;
-        transform: translateY(-50%);
-        
-        .slider-wrapper{
-            flex: 0 1 50%;
-            &.slider-image-wrapper{
-                background-color: red;
-            }
-            &.slider-text-wrapper{
-                background-color: blue;
-            }
-        }
+    .banner-slider {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      .slider-wrapper {
+        width: 50%;
+      }
     }
   }
 }
-.carousel{
-    height: 100%; /* height of carousel */
+.slider-text-wrapper {
+  .carousel {
+    height: 100%;
     .carousel-cell {
-        width: 100%; /* full width */
-        height: 100%; /* height of carousel */
-        margin-right: 10px;
+      padding: 0 18%;
+      height: 100%;
+    }
+    .flickity-page-dots {
+      bottom: 0;
+      .dot {
+        width: 40px;
+        height: 3px;
+        border-radius: 0;
       }
+    }
+  }
 }
+.carousel {
+  width: 100%;
+  height: 100%;
+  .carousel-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      user-select: none;
+      pointer-events: none;
+    }
+    .banner-content {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      color: #fff;
+      .sub-title {
+        font-size: 12px;
+        color: #000;
+        text-transform: uppercase;
+        font-family: "Harmonia Sans W01";
+        margin-bottom: 20px;
+      }
+      .title {
+        font-size: 40px;
+        line-height: 50px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.best-seller {
+  margin-top: 175px;
+  .section-heading {
+    margin-bottom: 80px;
+    .section-heading-title {
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #000000;
+      text-align: center;
+    }
+  }
+  .section-content {
+    .carousel-cell {
+      width: 20%;
+      height: 560px;
+      align-items: start;
+      background-color: #ddd;
+      .product {
+        height: 100%;
+        .product_thumb {
+          position: relative;
+          height: 70%;
+          .product_primary_thumb {
+            height: 100%;
+
+            img {
+              width: 100%;
+              max-width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              user-select: none;
+              pointer-events: none;
+            }
+          }
+          .product_badges {
+          }
+          .add_cart {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
