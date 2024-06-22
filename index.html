@@ -237,84 +237,627 @@
           </div>
         </div>
       </div>
-      </div>
-      <div class="best-seller">
-          <div class="section-heading">
-            <div class="section-heading-title"><h3>OUR BEST SELLERS</h3></div>
-          </div>
-          <div class="section-content slider-wrapper">
-            <div class="carousel product-slider" data-flickity='{ "wrapAround": true,"groupCells": 1 ,"cellAlign": "left",
-          "contain": true,"prevNextButtons": false, "pageDots": true, "draggable": false}'>
-          <div class="carousel-cell">
-            <div class="product">
-              <div class="product_thumb">
-                <div class="product_primary_thumb">
-                  <img
-                    class="product_img_primary"
-                    src="./assets/images/Layer-22.jpg"
-                    alt="product"
-                  />
-                </div>
-                <!-- <div class="product_second_thumb">
-        <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
-      </div> -->
-                <div class="product_badges">
-                  <span class="badge new active">New</span>
-                  <span class="badge sale">Sale</span>
-                  <span class="badge sale-off">55% off</span>
-                  <span class="badge out-of-stock">Out of stock</span>
-                </div>
-                <div class="add_cart">
-                  <i class="icon fkt-cart-plus"></i
-                  ><span class="add-cart-content">ADD TO CART</span>
-                </div>
-                <div class="cta_btn">
-                  <div class="wrap_btn">
-                    <span class="icon heart"
-                      ><i class="fkt-heart-o"></i
-                    ></span>
-                    <span class="icon glass"
-                      ><i class="fkt-binoculars"></i
-                    ></span>
-                    <span class="icon shuffle"
-                      ><i class="fkt-random"></i
-                    ></span>
-                  </div>
-                </div>
+    </div>
+    <div class="best-seller">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-heading-title"><h3>OUR BEST SELLERS</h3></div>
+        </div>
+        <div class="section-content slider-wrapper">
+          <div class="carousel product-slider" data-flickity='{ "wrapAround": false,"groupCells": 1 ,"cellAlign": "center",
+        "contain": true,"prevNextButtons": false, "pageDots": false, "draggable": true,"freeScroll": true}'> 
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
               </div>
-              <div class="product_info">
-                <span class="product_price normal_price">$60.00</span>
-                <div class="product_title">
-                  <a href="#">Brown paperbag waist pencil skirt</a>
-                </div>
-                <div class="ratings-container">
-                  <div class="ratings-star">
-                    <i class="icon fkt-star"></i>
-                    <i class="icon fkt-star"></i>
-                    <i class="icon fkt-star"></i>
-                    <i class="icon fkt-star"></i>
-                    <i class="icon fkt-star"></i>
-                    <span class="star-fill star-1-0">
-                      <i class="icon fkt-star"></i>
-                      <i class="icon fkt-star"></i>
-                      <i class="icon fkt-star"></i>
-                      <i class="icon fkt-star"></i>
-                      <i class="icon fkt-star"></i>
-                    </span>
-                  </div>
-                  <span class="rating-text">( 2 Reviews )</span>
-                </div>
-                <div class="product_color">
-                  <button class="color brown active"></button>
-                  <button class="color black"></button>
-                  <button class="color brown-gray"></button>
-                </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
               </div>
             </div>
-          </div>  
-        </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price sale">
+                <span class="price">$300.00</span>
+                <span class="compare-price">$400.00</span>
+              </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
           </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="carousel-cell">
+          <div class="product__wrapper">
+            <div class="product__media ratio">
+              <a href="#" class="product__media-wrapp">
+                <img class="product__media--main" src="assets/images/p-d2.jpg" alt="p-d2.jpg" srcset="">
+                <img class="product__media--hover" src="assets/images/p-d2-1.jpg" alt="p-d2-1.jpg" srcset="">
+              </a>
+              <div class="product_badges">
+                <span class="badge new active">New</span>
+                <span class="badge sale">Sale</span>
+                <span class="badge sale-off">55% off</span>
+                <span class="badge out-of-stock">Out of stock</span>
+              </div>
+              <div class="add_cart">
+                <a href="#" class="left add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+                    <title>quickview</title>
+                    <defs>
+                      <image  width="16" height="10" id="quickview" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="quickview" href="#quickview" x="0" y="0"/>
+                  </svg></span>
+                  <span>QUICK VIEW</span>
+                </a>
+                <a href="#" class="right add-cart-btn">
+                  <span class="icon"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                    <title>bag</title>
+                    <defs>
+                      <image width="512" height="512" id="bag" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnIGlkPSJfMDFfYWxpZ25fY2VudGVyIiBkYXRhLW5hbWU9IjAxIGFsaWduIGNlbnRlciI+PHBhdGggZD0iTTE4LDZBNiw2LDAsMCwwLDYsNkgwVjIxYTMsMywwLDAsMCwzLDNIMjFhMywzLDAsMCwwLDMtM1Y2Wk0xMiwyYTQsNCwwLDAsMSw0LDRIOEE0LDQsMCwwLDEsMTIsMlpNMjIsMjFhMSwxLDAsMCwxLTEsMUgzYTEsMSwwLDAsMS0xLTFWOEg2djJIOFY4aDh2MmgyVjhoNFoiLz48L2c+PC9zdmc+Cg=="/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="bag" href="#bag" transform="matrix(.025,0,0,.025,0,0)"/>
+                  </svg></span>
+                  <span>ADD TO CART</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502V15.968ZM12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="rating-label">4.5</div>
+              </div>
+              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <div class="product-price">$300.00 </div>
+              <div class="product-variable">
+                <button class="color yellow active"></button>
+                <button class="color light-blue"></button>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
-    </div>
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar">
+          <div class="slider-progress"></div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </div>
+  <div class="section compare"></div>
   </body>
 </html>

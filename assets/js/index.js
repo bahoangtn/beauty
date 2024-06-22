@@ -53,5 +53,11 @@ $(document).ready(function () {
         let value = _this.text();
         dropdown.find('.dropbtn').text(value);
         dropdown.find('.dropdown-content').hide();
-    })
+    });
+    var flkty = Flickity.data(".carousel.product-slider");
+    flkty.on('scroll', function(progress) {
+        let progressBar = $(".slider-progress")[0];
+        progress = Math.max(0, Math.min(1, progress));
+        progressBar.style.width = progress * 100 + '%';
+      });
 });
