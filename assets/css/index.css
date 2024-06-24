@@ -515,6 +515,7 @@ body {
 .best-seller {
   overflow: hidden;
   margin-top: 175px;
+  padding-bottom: 45px;
 }
 .best-seller .section-heading {
   margin-bottom: 80px;
@@ -763,4 +764,55 @@ body {
   width: 0%;
   height: 3px;
   background-color: #000;
+}
+
+.section-compare {
+  padding: 45px;
+}
+.section-compare .banner-heading {
+  margin-bottom: 40px;
+}
+.section-compare .banner-heading .banner-heading-title {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #000000;
+  text-align: center;
+}
+.section-compare .banner-heading .banner-heading-sub-title {
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  text-align: center;
+}
+
+.img-comp-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 695px;
+}
+.img-comp-container .img-comp-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-height: 695px;
+}
+.img-comp-container .img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+.img-comp-container .img-comp-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
