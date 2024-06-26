@@ -143,4 +143,17 @@ $(document).ready(function () {
       }
     }
   }
+  //quantity
+  $('.quantity .icon').on('click', function() {
+    let _this = $(this);
+    let input = $('#input-quantity');
+    let inputVal = parseInt(input.val());
+    if (_this.hasClass('add')) {
+      inputVal = ++inputVal;
+      input.val(inputVal);
+    }else if (_this.hasClass('minus') && inputVal > 1){
+      inputVal = --inputVal;
+      input.val(inputVal);
+    }
+  })
 });
