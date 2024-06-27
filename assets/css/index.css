@@ -1669,6 +1669,16 @@ body {
      object-position: center;
 }
 
+.section-store-location {
+  background-color: #f1f6fa;
+  height: 300px;
+  display: flex;
+}
+.section-store-location .cols {
+  width: 50%;
+  height: 100%;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

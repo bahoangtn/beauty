@@ -1842,6 +1842,21 @@ body {
     }
   }
 }
+.section-store-location{
+  background-color: #f1f6fa;
+  height: 300px;
+  display: flex;
+  .cols{
+    width: 50%;
+    height: 100%;
+    &.col1{
+      &.tab{
+        max-width: calc(1410 / 2 -20px);
+      }
+    }
+  }
+
+}
 @keyframes marquee {
   0% {
     transform: translateX(0);
