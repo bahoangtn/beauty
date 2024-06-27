@@ -144,16 +144,67 @@ $(document).ready(function () {
     }
   }
   //quantity
-  $('.quantity .icon').on('click', function() {
+  $('.quantity .icon').on('click', function () {
     let _this = $(this);
     let input = $('#input-quantity');
     let inputVal = parseInt(input.val());
     if (_this.hasClass('add')) {
       inputVal = ++inputVal;
       input.val(inputVal);
-    }else if (_this.hasClass('minus') && inputVal > 1){
+    } else if (_this.hasClass('minus') && inputVal > 1) {
       inputVal = --inputVal;
       input.val(inputVal);
     }
   })
+
+  //tooltip
+  $('.tooltips').append("<span class='tooltip-wrapper'></span>");
+  $('.tooltips:not([tooltip-position])').attr('tooltip-position', 'bottom');
+
+  $('.bundle-item').on('click', function () {
+    let _this = $(this);
+    $('.bundle-item').removeClass('active');
+    _this.addClass('active');
+    let tooltipData = _this.data('tooltip');
+    $('.hotspot').removeClass('active');
+    let tooltipTitle = $('.hotspot_' + tooltipData).attr('tooltip');
+    let tooltipPrice = $('.hotspot_' + tooltipData).attr('price');
+    let appendContent = `<p class="tooltip-title">${tooltipTitle}</p><p class="tooltip-price">${tooltipPrice}</p>`
+    $('.hotspot_' + tooltipData).find('span').empty().append(appendContent);
+    $('.hotspot_' + tooltipData).addClass('active');
+  });
+  $('.hotspot').on('click', function () {
+    let _this = $(this);
+    let bundleItem = $('.bundle-item');
+    let tooltipData = _this.data('tooltip');
+    $('.hotspot').removeClass('active');
+    bundleItem.each(function (index, item) {
+      let _item = $(item);
+      _item.removeClass('active');
+      if (_item.data('tooltip') == tooltipData) {
+        _item.addClass('active');
+        _this.addClass('active');
+        let tooltipTitle = _this.attr('tooltip');
+        let tooltipPrice = _this.attr('price');
+        let appendContent = `<p class="tooltip-title">${tooltipTitle}</p><p class="tooltip-price">${tooltipPrice}</p>`
+        _this.find('span').empty().append(appendContent);
+      }
+    })
+  });
+  $('.hotspot_1').trigger('click');
+  //accordion
+  $(".at-title").click(function () {
+    $(this)
+      .toggleClass("active")
+      .next(".at-tab")
+      .slideToggle()
+      .parent()
+      .siblings()
+      .find(".at-tab")
+      .slideUp()
+      .prev()
+      .removeClass("active");
+  });
 });
+
+
