@@ -205,6 +205,20 @@ $(document).ready(function () {
       .prev()
       .removeClass("active");
   });
+  //Tabs
+  $('.tab-button').on('click', function(){
+    $('.tab-button').removeClass('active');
+    $(this).addClass('active');
+    openCity($(this).data('tab'));
+  });
+  function openCity(cityName) {
+    let i;
+    let x = $('.city');
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    $('#'+cityName).fadeIn();
+  }
 });
 
 

@@ -18,11 +18,11 @@
         <div class="menu-container">
           <div class="top-bar">
             <div class="top-bar__col">
-              <a href="#">About</a>
-              <a href="#">Help & FAQs</a>
+              <a class="hover-effect" href="#">About</a>
+              <a class="hover-effect" href="#">Help & FAQs</a>
             </div>
             <div class="top-bar__col">
-              <span>Summer sale discount off 30%!</span><a href="#">Shop Now</a>
+              <span>Summer sale discount off 30%!</span><a class="hover-effect" href="#">Shop Now</a>
             </div>
             <div class="top-bar__col">
               <div class="dropdown language">
@@ -69,11 +69,11 @@
           </div>
           <div id="navbar">
             <div class="navbar-col">
-              <a href="#">New in arrok</a>
-              <a href="#">Clothing</a>
-              <a href="#">Accessories</a>
-              <a href="#">Sale</a>
-              <a href="#">Features</a>
+              <a class="hover-effect" href="#">New in arrok</a>
+              <a class="hover-effect" href="#">Clothing</a>
+              <a class="hover-effect" href="#">Accessories</a>
+              <a class="hover-effect" href="#">Sale</a>
+              <a class="hover-effect" href="#">Features</a>
             </div>
             <div class="navbar-col">
               <a href="#" class="site-logo">PRALISE</a>
@@ -184,7 +184,7 @@
           </svg></span>
           <div class="banner-heading-title"><h3>We make natural skincare that works from plant powered<br>
             ingredients, with earth friendly packaging.<br>
-            The result? <a href="#">Good skin by nature.</a></h3></div>
+            The result? <a class="hover-effect" href="#">Good skin by nature.</a></h3></div>
         </div>
         <div class="banner-row">
           <div class="col-1"></div>
@@ -292,7 +292,7 @@
                 </div>
                 <div class="rating-label">4.5</div>
               </div>
-              <a href="#" class="product-name">Band-collar Popover Tunic</a>
+              <a href="#" class="product-name hover-effect">Band-collar Popover Tunic</a>
               <div class="product-price sale">
                 <span class="price">$300.00</span>
                 <span class="compare-price">$400.00</span>
@@ -939,6 +939,26 @@
       <div class="cols col2"></div>
      
    </section>
+  <section class="section section-new-colection">
+      <div class="container absolute">
+       <div class="left">
+        <div class="section-heading">
+          <span class="sub-title">FOR ALL SKIN TYPES</span>
+          <span class="title">Gentle skincare for
+            every day</span>
+          <span class="text">This balm-to-milk treatment softens and soothes as it thoroughly cleanses with its northern forest aromatics and pure botanicals.
+          </span>
+          <a class="primary-btn" href="#">Shop now</a>
+        </div>
+       </div>
+       <div class="right"></div>
+      </div>
+      <div class="cols col1">
+          
+      </div>
+      <div class="cols col2"></div>
+     
+   </section>
    <section class="section section-categories">
     <div class="container">
       <div class="banner-heading">
@@ -1441,22 +1461,163 @@
   </section>
   <section class="section-store-location">
     <div class="cols col1">
-      <div class="tab">
+      <div class="wrapper-tabs">
+        <div class="tabs">
+          <button class="tab-item tab-button active" data-tab="sydney">Sydney</button>
+          <button class="tab-item tab-button" data-tab="newyork">Newyork</button>
+          <button class="tab-item tab-button" data-tab="london">London</button>
+        </div>
         
+        <div id="sydney" class="city">
+          <h3>Sydney Store</h3>
+          <p>240 Brunswick Street, Fitzroy VIC 3065 Australia<br>
+            <br>
+            Monday-Thursday: 10am-pm
+            Friday-Sunday: 11am-5pm
+          </p>
+          <a href="#" class="primary-btn">GET DIRECTIONS</a>
+        </div>
+        
+        <div id="newyork" class="city" style="display:none">
+          <h3>Newyork Store</h3>
+          <p>Monday-Thursday: 10am-pm Friday-Sunday: 11am-5pm</p> 
+          <a href="#" class="primary-btn">GET DIRECTIONS</a>
+        </div>
+        
+        <div id="london" class="city" style="display:none">
+          <h3>London Store</h3>
+          <p>Monday-Thursday: 10am-pm Friday-Sunday: 11am-5pm</p>
+          <a href="#" class="primary-btn">GET DIRECTIONS</a>
+        </div>
       </div>
     </div>
-    <div class="cols col2"></div>
+    <div class="cols col2">
+      <div class="wrapper-image ratio">
+        <img src="assets/images/Layer34.jpg" alt="Layer34">
+      </div>
+    </div>
 
   </section>
-  <footer>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/flickity.pkgd.min.js"></script>
-    <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/index.js"></script>
+  <footer class="section seciton-footer">
+   <div class="footer-main">
+    <div class="container">
+      <div class="footer-main-col">
+        <div class="footer-main-col-title">CONTACT</div>
+        <div class="footer-main-col-content">
+          <p>94A Oxford St,</p>
+          <p>Paddington NSW 2021, Australia</p>
+          <p class="footer-main-tel">(+800) 1234 5678 90</p>
+          <p>support@pralise.com</p>
+          <div class="cur">
+            <div class="dropdown language">
+              <img src="assets/flags/en.svg" alt="English" class="flag-icon">
+              <span class="dropbtn">English</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
+                <path d="M360.5 217.5l-152 143.1C203.9 365.8 197.9 368 192 368s-11.88-2.188-16.5-6.562L23.5 217.5C13.87 208.3 13.47 193.1 22.56 183.5C31.69 173.8 46.94 173.5 56.5 182.6L192 310.9l135.5-128.4c9.562-9.094 24.75-8.75 33.94 .9375C370.5 193.1 370.1 208.3 360.5 217.5z"></path>
+              </svg>
+              <div class="dropdown-content">
+                <span class="dropdown-item en">English</span>
+                <span class="dropdown-item fr">Français</span>
+                <span class="dropdown-item vi">Tiếng Việt</span>
+                <span class="dropdown-item es">Español</span>
+              </div>
+            </div>
+            <div class="dropdown currency">
+              <span class="dropbtn">USD $</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
+                <path d="M360.5 217.5l-152 143.1C203.9 365.8 197.9 368 192 368s-11.88-2.188-16.5-6.562L23.5 217.5C13.87 208.3 13.47 193.1 22.56 183.5C31.69 173.8 46.94 173.5 56.5 182.6L192 310.9l135.5-128.4c9.562-9.094 24.75-8.75 33.94 .9375C370.5 193.1 370.1 208.3 360.5 217.5z"></path>
+              </svg>
+              <div class="dropdown-content">
+                <span class="dropdown-item en">USD $</span>
+                <span class="dropdown-item vi">VND ₫</span>
+                <span class="dropdown-item es">EUR €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main-col">
+        <div class="footer-main-col-title">SHOP</div>
+        <div class="footer-main-col-content">
+          <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Bundles & Duos</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-main-col">
+        <div class="footer-main-col-title">HELP</div>
+        <div class="footer-main-col-content">
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-main-col">
+        <div class="footer-main-col-title">Get on the list</div>
+        <div class="footer-main-col-content">
+          <p>Subscribe for $10 off orderes of $100+, early access, exclusive discounts and partnerships</p>
+          <div class="footer-main-newsletter">
+            <form action="#" method="post" id="newsletter" class="form-newletter">
+              <div class="newsletter-filed">
+                <input id="input-newletter" type="email" required="required" name="contact[email]" placeholder="Enter your email...">
+                <button id="btn-submit-newletter" type="submit"><span>
+                  <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 15" width="19" height="15">
+                  <title>download (6)</title>
+                  <defs>
+                    <image  width="19" height="15" id="img1254" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAAAXNSR0IB2cksfwAAAHJQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////BjDohgAAACZ0Uk5TAXO8wG/+r6C5ABKztrAK/J4J+ghh988iMd7vSxG1/4IGfv3oR8fgFWpAAAAAc0lEQVR4nJXQsQqDQBAE0JkgoogKprTy/z8qVUoFRdFCXOdUzAnXZKvdB1PMEiThjZkxClj8Iu1HNN25C3M5JZGMq2zNhIOjQsFpOwylsAMqUY/L8HZ5ibW4DXPj7JPCM6CmfY/Fs3v+MPV4mnqE+gb+sgNrXT9LPLdOPwAAAABJRU5ErkJggg=="/>
+                  </defs>
+                  <style>
+                  </style>
+                  <use id="download (6)" href="#img1254" x="0" y="0"/>
+                </svg>
+              </span></button>
+              </div>
+            </form>
+          </div>
+          <ul class="social-media">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a></li>
+            <li><a href="#"><svg fill="#fff" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 508 508" xml:space="preserve" transform="rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M254,0C113.9,0,0,113.9,0,254s113.9,254,254,254s254-113.9,254-254S394.1,0,254,0z M75.7,115.7 c28.6,36.8,44.3,80.2,47.1,124.2H28.7C31.6,193.3,48.7,150.5,75.7,115.7z M28.7,268.1h94.1c-2.8,44-18.4,87.4-47.1,124.2 C48.7,357.6,31.6,314.7,28.7,268.1z M239.9,479.3c-56.5-3.5-107.4-27.8-145.2-65.4c34.7-42.8,53.5-93.9,56.4-145.8h88.8V479.3z M239.9,239.9h-88.8c-2.9-51.8-21.7-103-56.4-145.7c37.7-37.6,88.7-62,145.2-65.5V239.9z M479.3,239.9h-94 c2.8-44,18.4-87.4,47-124.2C459.3,150.5,476.4,193.2,479.3,239.9z M268.1,28.7c56.5,3.5,107.5,27.9,145.3,65.5 C378.7,137,359.9,188,357,239.9h-88.9V28.7z M268.1,479.3V268.1h88.8c2.9,51.8,21.7,103,56.4,145.7 C375.6,451.4,324.6,475.8,268.1,479.3z M432.3,392.2c-28.6-36.7-44.3-80.1-47-124.1h94C476.4,314.7,459.3,357.5,432.3,392.2z"></path> </g> </g> </g></svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"/></svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <div class="container">
+      <div class="rows">
+        <div class="col copy-right">Powered by Shopify</div>
+        <div class="col payment-method">
+          <ul>
+            <li><img src="assets/images/m1.png" alt="m1"></li>
+            <li><img src="assets/images/m2.png" alt="m2"></li>
+            <li><img src="assets/images/m3.png" alt="m3"></li>
+            <li><img src="assets/images/m4.png" alt="m4"></li>
+            <li><img src="assets/images/m5.png" alt="m5"></li>
+            <li><img src="assets/images/m6.png" alt="m6"></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+   </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script src="assets/js/flickity.pkgd.min.js"></script>
+<script src="assets/js/countdown.min.js"></script>
+<script src="assets/js/index.js"></script>
   </body>
 </html>
