@@ -24,6 +24,10 @@ body {
   color: #e14140 !important;
   transition: color 0.55s ease;
 }
+.hover-effect:hover svg {
+  fill: #e14140 !important;
+  transition: color 0.55s ease;
+}
 
 .slash {
   width: 1px;
@@ -317,6 +321,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.header-wrapper .menu-container #navbar .navbar-col a svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+}
 .header-wrapper .menu-container #navbar .navbar-col:first-child {
   gap: 12px;
 }
@@ -392,6 +401,46 @@ body {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 32px;
+}
+
+.second-banner2 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-banner2 .container .col1 {
+  flex: 1 1 50%;
+  min-height: 500px;
+}
+.second-banner2 .container .col1 .carousel-cell {
+  width: 20%;
+  align-items: start;
+  height: auto;
+  margin-right: 2rem;
+}
+.second-banner2 .container .col1 .carousel-cell .media {
+  width: 100%;
+}
+.second-banner2 .container .col1 .carousel-cell .media .img {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.second-banner2 .container .col2 {
+  flex: 1 1 50%;
 }
 
 .second-banner .banner-countdown {
