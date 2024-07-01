@@ -312,7 +312,34 @@ body {
   flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
-  flex: 0 1 33.333%;
+}
+.header-wrapper .menu-container #navbar .navbar-col.col-1 {
+  flex: 0 1 43%;
+}
+@media screen and (max-width: 1439px) {
+  .header-wrapper .menu-container #navbar .navbar-col.col-1 .left-menu {
+    display: none;
+  }
+}
+.header-wrapper .menu-container #navbar .navbar-col.col-1 .menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+}
+.header-wrapper .menu-container #navbar .navbar-col.col-1 .menu-mobile svg {
+  width: 24px;
+}
+.header-wrapper .menu-container #navbar .navbar-col.col-2 {
+  flex: 0 1 14%;
+}
+.header-wrapper .menu-container #navbar .navbar-col.col-3 {
+  flex: 0 1 43%;
+}
+.header-wrapper .menu-container #navbar .navbar-col.col-3 a {
+  display: flex;
+  align-items: center;
 }
 .header-wrapper .menu-container #navbar .navbar-col a {
   color: #fff;
@@ -401,46 +428,6 @@ body {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 32px;
-}
-
-.second-banner2 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.second-banner2 .container .col1 {
-  flex: 1 1 50%;
-  min-height: 500px;
-}
-.second-banner2 .container .col1 .carousel-cell {
-  width: 20%;
-  align-items: start;
-  height: auto;
-  margin-right: 2rem;
-}
-.second-banner2 .container .col1 .carousel-cell .media {
-  width: 100%;
-}
-.second-banner2 .container .col1 .carousel-cell .media .img {
-  display: block;
-  max-width: 100%;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-.second-banner2 .container .col2 {
-  flex: 1 1 50%;
 }
 
 .second-banner .banner-countdown {
@@ -1983,6 +1970,62 @@ body {
 .seciton-footer .footer-bottom .container .payment-method ul li img {
   width: 100%;
   max-width: 100%;
+}
+
+#menu_mobile {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 100%;
+}
+#menu_mobile .content {
+  position: relative;
+  min-width: 367px;
+  padding-top: 60px;
+  padding-bottom: 0;
+  padding-inline-start: 20px;
+  padding-inline-end: 0;
+  isolation: isolate;
+  background-color: #fff;
+  height: 100%;
+}
+#menu_mobile .content .close-button {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  border: none;
+  background-color: transparent;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+}
+#menu_mobile .content .sub-nav-mb .nav-ul-mb {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu_mobile .content .sub-nav-mb .nav-ul-mb .nav-li-item-mb {
+  border-bottom: solid 1px rgb(236, 236, 236);
+  padding: 2px 0;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+#menu_mobile .content .sub-nav-mb .nav-ul-mb .nav-li-item-mb details summary {
+  display: flex;
+  min-height: 40px;
+  color: #000;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 @keyframes marquee {
