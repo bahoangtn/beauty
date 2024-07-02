@@ -219,6 +219,31 @@ $(document).ready(function () {
     }
     $('#'+cityName).fadeIn();
   }
+  //Menu accordion
+  $('.menu-item-link').on('click', function () {  
+    let _this = $(this);
+    item = _this.closest('.menu-list-item');
+    item.toggleClass('open');
+    item.find('.sub-menu').slideToggle();
+  });
+  //Open, close menu
+  let menu = $('#menu_mobile');
+  let overlay = $('.mb-menu-overlay');
+  $('.menu-mobile').on('click', function(){
+    menu.toggleClass('active');
+    if(menu.hasClass('active')){
+      overlay.show();
+    }
+  });
+  $('.mb-menu .close-button').on('click', function(){
+    $('#menu_mobile').removeClass('active');
+    overlay.hide();
+  });
+  overlay.on('click', function(e){
+    e.preventDefault;
+    overlay.hide();
+    menu.removeClass('active');
+  })
 });
 
 
