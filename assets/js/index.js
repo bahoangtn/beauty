@@ -64,6 +64,11 @@ $(document).ready(function () {
   //Compare
   initComparisons()
   function initComparisons() {
+    let containerWidth = $('.section-compare .img-comp-container')[0].offsetWidth;
+    let compImg = $('.img-comp-img img');
+    compImg.each(function (index, item) {
+      $(item).css('width', `${containerWidth}px`);
+      })
     var x, i;
     /*find all elements with an "overlay" class:*/
     x = document.getElementsByClassName("img-comp-overlay");
