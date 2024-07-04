@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="16" height="10">
+	<title>download</title>
+	<defs>
+		<image  width="16" height="10" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAA9WeRWT98aXQ+irJhl1W/Jd6bFE80J2euaMLoAAAABZSURBVHicZc6xCoAwDATQHLRDBxVR+v+/Z0FEBB0UzhitSwKB8CDJQZ4CICRt1A74gJdBwg88FDpgaaLCufXkihEo0sZZhjBJJj24lXo07fWof2vBspQ32A2wJjQzo9pBDwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="download" href="#img1" x="0" y="0"/>
+</svg>
